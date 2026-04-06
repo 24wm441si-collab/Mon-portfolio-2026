@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="CSS/Style.css"> </head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+.   <link rel="stylesheet" href="CSS/Style.css">
+.   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+.   <!-- icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body> 
     <header> 
@@ -26,13 +28,138 @@
         
     </header> 
    <main>
-     <h1>
-        Mes projets
-    </h1>
-        
+        <h1>Mes Réalisations</h1>
+
+    <section class="projets">
+        <div class="projets-container">
+
+            <!--first -->
+            <div class="carte">
+                <img src="image/e-commerce.jpg" alt="e-commerce">
+                <div class="contenu">
+                    <h3>Site E-commerce</h3>
+                    <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+
+                    <div class="liens">
+                     <a href="#"><i class="fab fa-github"></i> Code</a>
+                     <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--second -->
+            <div class="carte">
+                <img src="image/G.taches.jpg" alt="G.taches">
+                <div class="contenu">
+                    <h3>Gestionnaire de Tâches</h3>
+                    <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                    </div>
+
+                    <div class="liens">
+                    <a href="#"><i class="fab fa-github"></i> Code</a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- third-->
+            <div class="carte">
+                <img src="image/blog.jpg" alt="blog">
+                <div class="contenu">
+                    <h3>Blog Personnel</h3>
+                    <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
+
+                    <div class="tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                    </div>
+
+                    <div class="liens">
+                      <a href="#"><i class="fab fa-github"></i> Code</a>
+                      <a href="#"><i class="fas fa-clock"></i> Bientôt</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- fourth-->
+            <div class="carte">
+                <img src="image/d.analyse.jpg" alt="d.analyse">
+                <div class="contenu">
+                    <h3>Dashboard d'Analyse</h3>
+                    <p>Visualisation de données dynamiques avec Python et Matplotlib.</p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Data</span>
+                    </div>
+
+                    <div class="liens">
+                     <a href="#"><i class="fab fa-github"></i> Code</a>
+                     <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- fifth-->
+            <div class="carte">
+                <img src="image/Météo.jpg" alt="Météo">
+                <div class="contenu">
+                    <h3>Application Météo</h3>
+                    <p>Application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+
+                    <div class="liens">
+                      <a href="#"><i class="fab fa-github"></i> Code</a>
+                      <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- sixth -->
+            <div class="carte">
+                <img src="image/ui.mobile.jpg" alt="ui.mobile">
+                <div class="contenu">
+                    <h3>Maquette Mobile UI</h3>
+                    <p>Conception d’une interface utilisateur moderne pour une application de fitness.</p>
+
+                    <div class="tags">
+                        <span>Figma</span>
+                        <span>Design</span>
+                    </div>
+
+                    <div class="liens">
+                    <a href="#"><i class="fas fa-pen-nib"></i> Design</a>
+                    <a href="#"><i class="fas fa-eye"></i> Aperçu</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
    </main>
     <footer>
-        <p> © 2026 Jenovic.Tous droits réservés .</p>
+        <p> © 2026 Jenovic.Tous droits réservés .
+        </p>
         <img src="image/wika.png" alt="wika"width="40"><img src="image/wika2.png" alt="wika2"width="40"><img src="image/wika3.png" alt="wika3"width="40"> 
     </footer>
 </body>

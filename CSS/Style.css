@@ -214,7 +214,7 @@ footer a {
    font-size: 1.6rem;
    color: white;
    margin: 0 10px;
-   translate: color 0.3s ease, transform 0.2s ease;
+   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 footer a:hover {
@@ -222,5 +222,156 @@ footer a:hover {
     transform: translateY(-3px);
 }
 
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f5f6fa;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+}
+
+header a {
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a.active {
+    color: #6c63ff;
+    border-bottom: 2px solid #6c63ff;
+}
+
+/* TITRE */
+main h1 {
+    text-align: center;
+    margin: 40px 0;
+    color: #6c63ff;
+}
+
+/* SECTION PROJETS */
+.projets {
+    padding: 20px 50px;
+}
+
+/* GRID */
+.projets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* CARTE */
+.carte {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE + LIGNE VIOLETTE */
+.carte img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 4px solid #6c63ff;
+}
+
+/* CONTENU */
+.contenu {
+    padding: 15px;
+}
+
+.contenu h3 {
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.contenu p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* TAGS */
+.tags {
+    margin: 10px 0;
+}
+
+.tags span {
+    background: #eef0ff;
+    color: #6c63ff;
+    padding: 5px 12px;
+    margin: 5px 5px 0 0;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* LIENS */
+.liens {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.liens a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.liens a:hover {
+    color: #6c63ff;
+}
+
+.liens i {
+    font-size: 14px;
+}
 
 
+/* FOOTER */
+footer {
+    background: #6c63ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer img {
+    margin: 10px;
+}
