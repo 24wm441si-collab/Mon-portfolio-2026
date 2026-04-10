@@ -464,3 +464,195 @@ footer img {
         align-items: center;
     }
 }
+
+/* DIVERTISSEMENT */
+.divertissement {
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.divertissement h1 {
+    color: var(--violet-doux);
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.divertissement-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* CARTES CLIQUABLES */
+.carte-div {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.carte-div:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.carte-div img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.carte-div:hover img {
+    transform: scale(1.1);
+}
+
+/* CONTENU */
+.contenu-div {
+    padding: 20px;
+}
+
+/* ICÔNES */
+.contenu-div i {
+    font-size: 24px;
+    color: var(--violet-doux);
+    margin-bottom: 10px;
+}
+
+/* TITRE */
+.contenu-div h3 {
+    margin-bottom: 10px;
+}
+
+/* TEXTE */
+.contenu-div p {
+    font-size: 14px;
+    color: var(--gris-fonce);
+}
+
+/* EFFET BORDURE ANIMÉE */
+.carte-div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: var(--violet-doux);
+    transition: 0.3s;
+}
+
+.carte-div:hover::after {
+    width: 100%;
+}
+
+/* IMAGE + LIGNE VIOLETTE */
+.carte img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 4px solid #6c63ff;
+    /* ← la petite bande violette */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .divertissement {
+        padding: 20px;
+    }
+}
+
+/* PASSIONS */
+.passions {
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.passions h1 {
+    color: var(--violet-doux);
+    margin-bottom: 10px;
+}
+
+.passions .slogan {
+    font-size: 1.2rem;
+    color: var(--gris-fonce);
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.passions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* CARTES */
+.carte-passions {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.carte-passions:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.carte-passions img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.carte-passions:hover img {
+    transform: scale(1.1);
+}
+
+/* CONTENU */
+.contenu-passions {
+    padding: 20px;
+}
+
+.contenu-passions h3 {
+    color: var(--violet-doux);
+    margin-bottom: 10px;
+}
+
+.contenu-passions p {
+    font-size: 14px;
+    color: var(--gris-fonce);
+}
+
+/* EFFET BORDURE ANIMÉE */
+.carte-passions::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: var(--violet-doux);
+    transition: 0.3s;
+}
+
+.carte-passions:hover::after {
+    width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .passions {
+        padding: 20px;
+    }
+}
